@@ -86,9 +86,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Users" id="dEN-TK-YfA">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="5Iz-eO-enP">
+                        <barButtonItem key="rightBarButtonItem" title="Add" style="plain" id="5Iz-eO-enP">
                             <connections>
-                                <segue destination="tAd-Hl-iq6" kind="show" id="aby-FK-2SD"/>
+                                <action selector="onAdd:" destination="BYZ-38-t0r" id="81S-Tr-fEf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -103,7 +103,7 @@
         <!--New User-->
         <scene sceneID="E7F-nn-EVv">
             <objects>
-                <viewController id="tAd-Hl-iq6" customClass="NewUsersViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewUsersViewController" id="tAd-Hl-iq6" customClass="NewUsersViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Or-MX-WK9"/>
                         <viewControllerLayoutGuide type="bottom" id="Cib-nh-6gp"/>
@@ -113,37 +113,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAs-sz-Ddx">
-                                <rect key="frame" x="94" y="164" width="50" height="21"/>
+                                <rect key="frame" x="94" y="120" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7B-OA-YS6">
-                                <rect key="frame" x="24.5" y="201" width="119.5" height="21"/>
+                                <rect key="frame" x="24.5" y="157" width="119.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02J-wT-qg3">
-                                <rect key="frame" x="98.5" y="238" width="45.5" height="21"/>
+                                <rect key="frame" x="98.5" y="194" width="45.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5U-78-vXc">
-                                <rect key="frame" x="156" y="159" width="203" height="30"/>
+                                <rect key="frame" x="156" y="115" width="203" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7b1-w9-VQW">
-                                <rect key="frame" x="156.5" y="233" width="203" height="30"/>
+                                <rect key="frame" x="156.5" y="189" width="203" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IYT-fd-URN">
-                                <rect key="frame" x="156.5" y="197" width="203" height="30"/>
+                                <rect key="frame" x="156.5" y="153" width="203" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
