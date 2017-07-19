@@ -7,6 +7,7 @@
 //
 
 #import "NewUsersViewController.h"
+#import "DBManager.h"
 
 @interface NewUsersViewController ()
 
@@ -37,22 +38,11 @@
         return;
     }
 
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    NSMutableArray *arrUsers = [[NSMutableArray alloc] init];
-    
-    if ([userDefaults objectForKey:@"users"] != nil)
-    {
-        arrUsers = [userDefaults mutableArrayValueForKey:@"users"];
+    if ([[DBManager sharedInstance] addUser:self.txtName.text phone:self.txtPhoneNumber.text email:self.txtEmail.text]) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self showDefaultAlert:@"Error" message:@"Failed adding a new user"];
     }
-    
-    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-    [dic setValue:self.txtName forKey:@"name"];
-    [dic setValue:self.txtPhoneNumber forKey:@"phonenumber"];
-    [dic setValue:self.txtEmail forKey:@"email"];
-    
-    
-    [self.navigationController popViewControllerAnimated:YES];
     
 }
 

@@ -16,6 +16,7 @@
 		D76166631F1F0FCF0045CEC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76166611F1F0FCF0045CEC5 /* LaunchScreen.storyboard */; };
 		D761666E1F1F10420045CEC5 /* NewUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D761666B1F1F10420045CEC5 /* NewUsersViewController.m */; };
 		D761666F1F1F10420045CEC5 /* UsersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D761666D1F1F10420045CEC5 /* UsersTableViewCell.m */; };
+		D76166731F1F3E430045CEC5 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D76166721F1F3E430045CEC5 /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,12 @@
 		D761666B1F1F10420045CEC5 /* NewUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUsersViewController.m; sourceTree = "<group>"; };
 		D761666C1F1F10420045CEC5 /* UsersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTableViewCell.h; sourceTree = "<group>"; };
 		D761666D1F1F10420045CEC5 /* UsersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewCell.m; sourceTree = "<group>"; };
+		D76166711F1F3E430045CEC5 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = DB/DBManager.h; sourceTree = "<group>"; };
+		D76166721F1F3E430045CEC5 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = DB/DBManager.m; sourceTree = "<group>"; };
+		D76166741F1F46E80045CEC5 /* Users+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Users+CoreDataClass.h"; path = "DB/Users+CoreDataClass.h"; sourceTree = "<group>"; };
+		D76166751F1F46E80045CEC5 /* Users+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Users+CoreDataClass.m"; path = "DB/Users+CoreDataClass.m"; sourceTree = "<group>"; };
+		D76166761F1F46E80045CEC5 /* Users+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Users+CoreDataProperties.h"; path = "DB/Users+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D76166771F1F46E80045CEC5 /* Users+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Users+CoreDataProperties.m"; path = "DB/Users+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,7 @@
 		D761664F1F1F0FCF0045CEC5 /* SMS */ = {
 			isa = PBXGroup;
 			children = (
+				D76166701F1F3E0F0045CEC5 /* DB */,
 				D761666A1F1F10420045CEC5 /* NewUsersViewController.h */,
 				D761666B1F1F10420045CEC5 /* NewUsersViewController.m */,
 				D761666C1F1F10420045CEC5 /* UsersTableViewCell.h */,
@@ -90,6 +98,19 @@
 				D76166511F1F0FCF0045CEC5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D76166701F1F3E0F0045CEC5 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				D76166741F1F46E80045CEC5 /* Users+CoreDataClass.h */,
+				D76166751F1F46E80045CEC5 /* Users+CoreDataClass.m */,
+				D76166761F1F46E80045CEC5 /* Users+CoreDataProperties.h */,
+				D76166771F1F46E80045CEC5 /* Users+CoreDataProperties.m */,
+				D76166711F1F3E430045CEC5 /* DBManager.h */,
+				D76166721F1F3E430045CEC5 /* DBManager.m */,
+			);
+			name = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76166731F1F3E430045CEC5 /* DBManager.m in Sources */,
 				D761666E1F1F10420045CEC5 /* NewUsersViewController.m in Sources */,
 				D76166581F1F0FCF0045CEC5 /* ViewController.m in Sources */,
 				D761666F1F1F10420045CEC5 /* UsersTableViewCell.m in Sources */,
@@ -325,6 +347,7 @@
 				D76166691F1F0FCF0045CEC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -34,34 +34,34 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6g-Wy-Zp2">
-                                                    <rect key="frame" x="8" y="0.0" width="45" height="43.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="0.0" width="47" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd4-3x-jxH">
-                                                    <rect key="frame" x="65" y="0.0" width="102.5" height="22"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="75" y="0.0" width="96.5" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MF2-7O-TPf">
-                                                    <rect key="frame" x="65" y="22" width="37" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="75" y="22" width="34.5" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MF2-7O-TPf" firstAttribute="top" secondItem="Vd4-3x-jxH" secondAttribute="bottom" id="2I0-Az-Zvc"/>
-                                                <constraint firstItem="Vd4-3x-jxH" firstAttribute="leading" secondItem="S6g-Wy-Zp2" secondAttribute="trailing" constant="12" id="7UC-rV-ZHH"/>
+                                                <constraint firstItem="Vd4-3x-jxH" firstAttribute="leading" secondItem="S6g-Wy-Zp2" secondAttribute="trailing" constant="20" id="7UC-rV-ZHH"/>
                                                 <constraint firstItem="S6g-Wy-Zp2" firstAttribute="leading" secondItem="4tu-mX-zoV" secondAttribute="leading" constant="8" id="Byi-Ke-yHp"/>
                                                 <constraint firstItem="Vd4-3x-jxH" firstAttribute="top" secondItem="4tu-mX-zoV" secondAttribute="top" id="NAE-aZ-4La"/>
                                                 <constraint firstItem="S6g-Wy-Zp2" firstAttribute="top" secondItem="4tu-mX-zoV" secondAttribute="top" id="QJE-m0-3dB"/>
                                                 <constraint firstAttribute="bottom" secondItem="MF2-7O-TPf" secondAttribute="bottom" id="eQc-ec-D9T"/>
                                                 <constraint firstAttribute="bottom" secondItem="S6g-Wy-Zp2" secondAttribute="bottom" id="kbC-i2-biy"/>
                                                 <constraint firstItem="MF2-7O-TPf" firstAttribute="height" secondItem="Vd4-3x-jxH" secondAttribute="height" id="lHt-Fw-iiV"/>
-                                                <constraint firstItem="MF2-7O-TPf" firstAttribute="leading" secondItem="S6g-Wy-Zp2" secondAttribute="trailing" constant="12" id="xMC-yc-uH6"/>
+                                                <constraint firstItem="MF2-7O-TPf" firstAttribute="leading" secondItem="S6g-Wy-Zp2" secondAttribute="trailing" constant="20" id="xMC-yc-uH6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -71,6 +71,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ClV-iI-yvh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="z4i-sK-j2g"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,6 +92,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="I1D-3p-qbr" id="y3v-LM-MiL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
