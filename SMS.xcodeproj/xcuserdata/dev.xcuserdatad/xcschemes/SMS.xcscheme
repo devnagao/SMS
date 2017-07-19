@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D76166201F1EF6050045CEC5"
+               BlueprintIdentifier = "D761664C1F1F0FCF0045CEC5"
                BuildableName = "SMS.app"
                BlueprintName = "SMS"
                ReferencedContainer = "container:SMS.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D76166201F1EF6050045CEC5"
+            BlueprintIdentifier = "D761664C1F1F0FCF0045CEC5"
             BuildableName = "SMS.app"
             BlueprintName = "SMS"
             ReferencedContainer = "container:SMS.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D76166201F1EF6050045CEC5"
+            BlueprintIdentifier = "D761664C1F1F0FCF0045CEC5"
             BuildableName = "SMS.app"
             BlueprintName = "SMS"
             ReferencedContainer = "container:SMS.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D76166201F1EF6050045CEC5"
+            BlueprintIdentifier = "D761664C1F1F0FCF0045CEC5"
             BuildableName = "SMS.app"
             BlueprintName = "SMS"
             ReferencedContainer = "container:SMS.xcodeproj">

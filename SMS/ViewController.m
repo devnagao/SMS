@@ -26,36 +26,4 @@
 }
 
 
-#pragma mark - MFMessageComposeViewControllerDelegate
--(void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
-{
-    switch (result) {
-        case MessageComposeResultCancelled:
-            break;
-            
-        case MessageComposeResultFailed:
-        {
-            [self showDefaultAlert:@"Error" message:@"Failed to send SMS!"];
-            break;
-        }
-            
-        case MessageComposeResultSent:
-            break;
-            
-        default:
-            break;
-    }
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
--(void) showDefaultAlert:(NSString*)title message:(NSString*)message
-{
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
-    [alertController addAction:okAction];
-    
-    [self presentViewController:alertController animated:YES completion:nil];
-}
-
 @end
