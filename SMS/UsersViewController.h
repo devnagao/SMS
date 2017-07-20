@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UsersViewController.h
 //  SMS
 //
 //  Created by Dev on 7/19/17.
@@ -10,7 +10,7 @@
 
 #import <MessageUI/MessageUI.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MFMessageComposeViewControllerDelegate>
+@interface UsersViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MFMessageComposeViewControllerDelegate>
 
 @property (nonatomic, strong) NSArray *arrUsers;
 @property (nonatomic, strong) NSMutableArray *arrSelectedUsers;
@@ -19,6 +19,7 @@
 
 
 - (IBAction)onAdd:(id)sender;
+- (IBAction)onSignOut:(id)sender;
 
 @end
 

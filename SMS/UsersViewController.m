@@ -1,21 +1,21 @@
 //
-//  ViewController.m
+//  UsersViewController.m
 //  SMS
 //
 //  Created by Dev on 7/19/17.
 //  Copyright © 2017 Dev. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "UsersViewController.h"
 #import "UsersTableViewCell.h"
 #import "NewUsersViewController.h"
 #import "DBManager.h"
 
-@interface ViewController ()
+@interface UsersViewController ()
 
 @end
 
-@implementation ViewController
+@implementation UsersViewController
 @synthesize arrUsers;
 @synthesize arrSelectedUsers;
 
@@ -114,6 +114,7 @@
 
 -(void) showSMS
 {
+    
     if(![MFMessageComposeViewController canSendText]) {
         [self showDefaultAlert:@"Error" message:@"Your device doesn't support SMS!"];
         return;
@@ -154,5 +155,11 @@
         NewUsersViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewUsersViewController"];
         [self.navigationController pushViewController:vc animated:YES];
     }
+}
+
+- (IBAction)onSignOut:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 @end

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D76166521F1F0FCF0045CEC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D76166511F1F0FCF0045CEC5 /* main.m */; };
 		D76166551F1F0FCF0045CEC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D76166541F1F0FCF0045CEC5 /* AppDelegate.m */; };
-		D76166581F1F0FCF0045CEC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D76166571F1F0FCF0045CEC5 /* ViewController.m */; };
+		D76166581F1F0FCF0045CEC5 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D76166571F1F0FCF0045CEC5 /* UsersViewController.m */; };
 		D761665B1F1F0FCF0045CEC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76166591F1F0FCF0045CEC5 /* Main.storyboard */; };
 		D761665E1F1F0FCF0045CEC5 /* SMS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D761665C1F1F0FCF0045CEC5 /* SMS.xcdatamodeld */; };
 		D76166601F1F0FCF0045CEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D761665F1F1F0FCF0045CEC5 /* Assets.xcassets */; };
@@ -18,6 +18,7 @@
 		D761666F1F1F10420045CEC5 /* UsersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D761666D1F1F10420045CEC5 /* UsersTableViewCell.m */; };
 		D76166731F1F3E430045CEC5 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D76166721F1F3E430045CEC5 /* DBManager.m */; };
 		D761667C1F1FBF9C0045CEC5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D761667B1F1FBF9C0045CEC5 /* MessageUI.framework */; };
+		D761667F1F2098CC0045CEC5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D761667E1F2098CC0045CEC5 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +26,8 @@
 		D76166511F1F0FCF0045CEC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D76166531F1F0FCF0045CEC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D76166541F1F0FCF0045CEC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D76166561F1F0FCF0045CEC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D76166571F1F0FCF0045CEC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D76166561F1F0FCF0045CEC5 /* UsersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
+		D76166571F1F0FCF0045CEC5 /* UsersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
 		D761665A1F1F0FCF0045CEC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D761665D1F1F0FCF0045CEC5 /* SMS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SMS.xcdatamodel; sourceTree = "<group>"; };
 		D761665F1F1F0FCF0045CEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +44,8 @@
 		D76166761F1F46E80045CEC5 /* Users+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Users+CoreDataProperties.h"; path = "DB/Users+CoreDataProperties.h"; sourceTree = "<group>"; };
 		D76166771F1F46E80045CEC5 /* Users+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Users+CoreDataProperties.m"; path = "DB/Users+CoreDataProperties.m"; sourceTree = "<group>"; };
 		D761667B1F1FBF9C0045CEC5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D761667D1F2098CC0045CEC5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D761667E1F2098CC0045CEC5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,14 +87,16 @@
 				D761666D1F1F10420045CEC5 /* UsersTableViewCell.m */,
 				D76166531F1F0FCF0045CEC5 /* AppDelegate.h */,
 				D76166541F1F0FCF0045CEC5 /* AppDelegate.m */,
-				D76166561F1F0FCF0045CEC5 /* ViewController.h */,
-				D76166571F1F0FCF0045CEC5 /* ViewController.m */,
+				D76166561F1F0FCF0045CEC5 /* UsersViewController.h */,
+				D76166571F1F0FCF0045CEC5 /* UsersViewController.m */,
 				D76166591F1F0FCF0045CEC5 /* Main.storyboard */,
 				D761665F1F1F0FCF0045CEC5 /* Assets.xcassets */,
 				D76166611F1F0FCF0045CEC5 /* LaunchScreen.storyboard */,
 				D76166641F1F0FCF0045CEC5 /* Info.plist */,
 				D761665C1F1F0FCF0045CEC5 /* SMS.xcdatamodeld */,
 				D76166501F1F0FCF0045CEC5 /* Supporting Files */,
+				D761667D1F2098CC0045CEC5 /* LoginViewController.h */,
+				D761667E1F2098CC0045CEC5 /* LoginViewController.m */,
 			);
 			path = SMS;
 			sourceTree = "<group>";
@@ -197,9 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D761667F1F2098CC0045CEC5 /* LoginViewController.m in Sources */,
 				D76166731F1F3E430045CEC5 /* DBManager.m in Sources */,
 				D761666E1F1F10420045CEC5 /* NewUsersViewController.m in Sources */,
-				D76166581F1F0FCF0045CEC5 /* ViewController.m in Sources */,
+				D76166581F1F0FCF0045CEC5 /* UsersViewController.m in Sources */,
 				D761666F1F1F10420045CEC5 /* UsersTableViewCell.m in Sources */,
 				D76166551F1F0FCF0045CEC5 /* AppDelegate.m in Sources */,
 				D76166521F1F0FCF0045CEC5 /* main.m in Sources */,
